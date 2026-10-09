@@ -129,6 +129,13 @@ GameObject:
   m_Component:
   - component: {fileID: 4990661}
   - component: {fileID: 4990660}
+  - component: {fileID: 4990668}
+  - component: {fileID: 4990667}
+  - component: {fileID: 4990666}
+  - component: {fileID: 4990665}
+  - component: {fileID: 4990664}
+  - component: {fileID: 4990663}
+  - component: {fileID: 4990662}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -169,6 +176,104 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4990662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4990659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62adbdb7387ae5047a6a3069afe52496, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TowerSpawner
+  towerPrefab: {fileID: 0}
+--- !u!114 &4990663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4990659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1f9a52f8e35dbf4b8e45d7d2b8e0525, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TowerScript
+--- !u!114 &4990664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4990659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c15e588177d60e14fa06a043def9e998, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Speler
+  naam: 
+  hp: 0
+  score: 0
+--- !u!114 &4990665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4990659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d8e70536d235e04092efe2b659cdeab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Prog_Les1
+  naam: Julian
+  ELachternaam: P
+  score: 0
+  health: 0
+  isAlive: 0
+--- !u!114 &4990666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4990659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44bab0403481eb24c9f7a412de52b2ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Player
+--- !u!114 &4990667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4990659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6bdb273f02aa3f40af2df2426b007ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
+  naam: Julian
+  score: 13000000
+  health: 100
+  isAlive: 1
+--- !u!114 &4990668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4990659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16794e90750c7bf41822d134846b6826, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HighestScore
+  Scores: 0100000022000000840300004300000015000000i
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -786,7 +891,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1009277741
 Transform:
   m_ObjectHideFlags: 0
