@@ -19,3 +19,7 @@
 ## opdracht 4
 ![alt text](SpaceForkProject.gif)
 ### Hier heb ik opdracht 4 gemaakt met de space fork het is me gelukt om de scripts allemaal los te maken. [Scripts](https://github.com/Juulsterr/Space48Forek/tree/main/Assets/Scripts)
+
+## Opdracht 5
+![alt text](ErwinLes5.gif)
+### hier moest ik een parent script maken die andere scripts gebruikt inplaats van monobehaviour te gebruiken. [Scripts](https://github.com/Juulsterr/M5_PROGGY/tree/main/Assets/Les5Scripts)
