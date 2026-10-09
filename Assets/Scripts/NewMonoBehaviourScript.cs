@@ -2,16 +2,23 @@ using UnityEngine;
 
 public class NewMonoBehaviourScript : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public string naam = "Julian";
+    public int score = 13000000;
+    public int health = 100;
+    public bool isAlive = true;
+        class PROG_Les1
     {
-        //ik gewloof je
-        
+        static void Main(string[] args)
+        {
+            Debug.Log("Hello World!");
+        }
     }
-
-    // Update is called once per frame
-    void Update()
+    public void LevendCheck()
     {
-        
+        if(health <= 0)
+        {
+            isAlive = false;
+            Destroy(gameObject);
+        }
     }
 }
