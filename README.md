@@ -25,18 +25,53 @@
 ### hier moest ik een parent script maken die andere scripts gebruikt inplaats van monobehaviour te gebruiken. [Scripts](https://github.com/Juulsterr/M5_PROGGY/tree/main/Assets/Les5Scripts)
 
 ## Opdracht 6
-## Dependencies Overview
 
-```csharp
-class FireProjectile:
-  - int ammoLeft     [Read & Write]
-  - float shootForce [Write only]
-
-class TowerLife:
-  - int life         [Read only]
-
-class PowerUp:
-  - float timeLeft   [Read only]
-
-class UI:
-  - int score        [Read & Write]
+| Class | Variabele / Property | Datatype | Toegang |
+| :--- | :--- | :--- | :--- |
+| `CoinManager` | `Coins` | `int` | Read & Write |
+| `CoinManager` | `CoinText` | `TextMeshProUGUI` | Read-only |
+| `Enemy` | `Speed` | `float` | Read-only |
+| `Enemy` | `Health` | `int` | Read & Write |
+| `Enemy` | `Damage` | `int` | Read & Write |
+| `Enemy` | `CoinEarning` | `int` | Read & Write |
+| `Enemy` | `Waypoints` | `Transform[]` | Read & Write |
+| `Enemy` | `CurrentWayPoint` | `int` | Read & Write |
+| `HealthManager` | `health` | `int` | Read & Write |
+| `KamikazeEnemy` | `ExplosionRadius` | `float` | Read & Write |
+| `Projectile` | `Speed` | `float` | Read & Write |
+| `Projectile` | `Target` | `Transform` | Read & Write |
+| `SpeedManager` | `SpeedUp` | `bool` | Read & Write |
+| `Tower` | `Range` | `float` | Read & Write |
+| `Tower` | `FireRate` | `float` | Read & Write |
+| `Tower` | `ProjectilePrefab` | `GameObject` | Read-only |
+| `Tower` | `FirePoint` | `Transform` | Read-only |
+| `Tower` | `UpgradeStages` | `TowerUpgradeStages[]` | Read-only |
+| `Tower` | `UpgradeStage` | `int` | Read-only |
+| `Tower` | `TowerUpgradeUIPrefab` | `GameObject` | Read-only |
+| `Tower` | `CurrentUI` | `GameObject` | Read & Write |
+| `Tower` | `TowerPrice` | `int` | Read & Write |
+| `Tower` | `FireCooldown` | `float` | Read & Write |
+| `Tower` | `CloudPS` | `GameObject` | Read & Write |
+| `TowerPlacer` | `PlacementTilemap` | `Tilemap` | Read-only |
+| `TowerPlacer` | `NonPlacementTilemap` | `Tilemap` | Read-only |
+| `TowerPlacer` | `GhostPrefab` | `GameObject` | Read-only |
+| `TowerPlacer` | `PlacementSFX` | `AudioClip` | Read-only |
+| `TowerUpgradeUI` | `Tower` | `Tower` | Read & Write |
+| `TowerUpgradeUI` | `UpgradeButton` | `Button` | Read & Write |
+| `TowerUpgradeUI` | `PriceText` | `TextMeshProUGUI` | Read & Write |
+| `WaveData` | `Duration` | `float` | Read & Write |
+| `WaveData` | `EasyEnemies` | `int` | Read & Write |
+| `WaveData` | `HardEnemies` | `int` | Read & Write |
+| `WaveData` | `FastEnemies` | `int` | Read & Write |
+| `WaveData` | `BossEnemy` | `int` | Read & Write |
+| `WaveData` | `BombEnemies` | `int` | Read & Write |
+| `WaveData` | `IsDone` | `bool` | Read & Write |
+| `WaveManager` | `waveText` | `TextMeshProUGUI` | Read & Write |
+| `WaveManager` | `Waves` | `WaveData[]` | Read & Write |
+| `WaveManager` | `StartButton` | `Button` | Read & Write |
+| `WaveManager` | `EasyEnemyPrefab` | `GameObject` | Read & Write |
+| `WaveManager` | `HardEnemyPrefab` | `GameObject` | Read & Write |
+| `WaveManager` | `FastEnemyPrefab` | `GameObject` | Read & Wave` |
+| `WaveManager` | `BossEnemyPrefab` | `GameObject` | Read & Write |
+| `WaveManager` | `BombEnemyPrefab` | `GameObject` | Read & Write |
+| `WaveManager` | `WayPoints` | `Transform[]` | Read & Write |     
