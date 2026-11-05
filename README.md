@@ -74,4 +74,5 @@
 | `WaveManager` | `FastEnemyPrefab` | `GameObject` | Read & Wave` |
 | `WaveManager` | `BossEnemyPrefab` | `GameObject` | Read & Write |
 | `WaveManager` | `BombEnemyPrefab` | `GameObject` | Read & Write |
-| `WaveManager` | `WayPoints` | `Transform[]` | Read & Write |     
+| `WaveManager` | `WayPoints` | `Transform[]` | Read & Write | 
+[Scripts](https://github.com/Juulsterr/TowerDefenseGameBO-2026-09-07_09-51-26/tree/main/Assets/Scripts)    
