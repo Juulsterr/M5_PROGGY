@@ -25,17 +25,18 @@
 ### hier moest ik een parent script maken die andere scripts gebruikt inplaats van monobehaviour te gebruiken. [Scripts](https://github.com/Juulsterr/M5_PROGGY/tree/main/Assets/Les5Scripts)
 
 ## Opdracht 6
-## Project Dependencies
+## Dependencies Overview
 
-### 🛡️ `TowerLife`
-* `int life` — **Read-only** *(afgeschermd met getter)*
+```csharp
+class FireProjectile:
+  - int ammoLeft     [Read & Write]
+  - float shootForce [Write only]
 
-### 🏹 `FireProjectile`
-* `int ammoLeft` — **Read & Write**
-* `float shootForce` — **Write-only**
+class TowerLife:
+  - int life         [Read only]
 
-### ⚡ `PowerUp`
-* `float timeLeft` — **Read-only**
+class PowerUp:
+  - float timeLeft   [Read only]
 
-### 📊 `UI`
-* `int score` — **Read & Write**
+class UI:
+  - int score        [Read & Write]
