@@ -9,8 +9,16 @@ public class Scoreboard : MonoBehaviour
     
     void Start()
 {
-    PickUp.OnPickupCollected += AddScore;
+    
 }
+    private void OnEnable()
+    {
+        PickUp.OnPickupCollected += AddScore;
+    }
+    private void OnDisable()
+    {
+        PickUp.OnPickupCollected -= AddScore;
+    }
 
 void AddScore()
 {
